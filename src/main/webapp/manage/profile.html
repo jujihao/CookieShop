@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="vendor/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="vendor/overlayscrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="css/style.sea.min.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+  </head>
+  <body>
+    <!-- Side Navbar -->
+    <nav class="side-navbar">
+      <!-- Sidebar Header    -->
+      <div class="sidebar-header d-flex align-items-center justify-content-center p-3 mb-3">
+        <!-- User Info-->
+        <div class="sidenav-header-inner text-center"><img class="img-fluid rounded-circle avatar mb-3" src="img/Garfield2.gif" alt="person">
+          <h2 class="h5 text-white text-uppercase mb-0">阿宝</h2>
+          <p class="text-sm mb-0 text-muted">店员</p>
+        </div>
+        <!-- Small Brand information, appears on minimized sidebar--><a class="brand-small text-center" href="login.jsp">
+          <p class="h1 m-0">LEI</p></a>
+      </div>
+      <!-- Sidebar Navigation Menus-->
+      <span class="text-uppercase text-gray-500 text-sm fw-bold letter-spacing-0 mx-lg-2 heading">菜单</span>
+		<ul class="list-unstyled">                  
+				<li class="sidebar-item"><a class="sidebar-link" href="index.html">
+						<svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
+							<use xlink:href="#real-estate-1"> </use>
+						</svg>仪表盘 </a></li>
+				<li class="sidebar-item"><a class="sidebar-link" href="cake.html">
+						<svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
+							<use xlink:href="#survey-1"> </use>
+						</svg>蛋糕管理 </a></li>
+				<li class="sidebar-item"><a class="sidebar-link" href="order.html">
+						<svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
+							<use xlink:href="#sales-up-1"> </use>
+						</svg>订单管理 </a></li>
+				<li class="sidebar-item"><a class="sidebar-link" href="user.html">
+						<svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
+							<use xlink:href="#portfolio-grid-1"> </use>
+						</svg>客户管理 </a></li>
+				<li class="sidebar-item active"><a class="sidebar-link" href="profile.html">
+						<svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
+							<use xlink:href="#quality-1"> </use>
+						</svg>个人资料 </a></li>
+      	</ul>
+    </nav>
+	
+    <div class="page">
+      <!-- navbar-->
+      <header class="header">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between w-100">
+              <div class="d-flex align-items-center">
+        		  <a class="menu-btn d-flex align-items-center justify-content-center p-2 bg-gray-900" id="toggle-btn" href="#">
+                  <svg class="svg-icon svg-icon-sm svg-icon-heavy text-white">
+                    <use xlink:href="#menu-1"> </use>
+                  </svg></a><a class="navbar-brand ms-2" href="index.html">
+                  <div class="brand-text d-none d-md-inline-block text-uppercase letter-spacing-0">
+        			  <span class="text-white fw-normal text-xs">LEI职业技术大学</span>
+        			  <strong class="text-primary text-sm">烘焙店</strong></div></a>
+        		</div>
+              <ul class="nav-menu mb-0 list-unstyled d-flex flex-md-row align-items-md-center">
+                
+                <!-- Log out-->
+                <li class="nav-item"><a class="nav-link text-white text-sm ps-0" href="login.jsp"> 
+        		<span class="d-none d-sm-inline-block">注销</span>
+                    <svg class="svg-icon svg-icon-xs svg-icon-heavy">
+                      <use xlink:href="#security-1"> </use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+	  
+      <!-- Breadcrumb-->
+      <div class="bg-gray-200 text-sm">
+        <div class="container-fluid">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 py-3">
+              <li class="breadcrumb-item"><a class="fw-light" href="index.html">主页</a></li>
+              <li class="breadcrumb-item active fw-light" aria-current="page">个人资料</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+	  
+      <!-- Page Header-->
+      <header class="py-4">
+     <!--   <div class="container-fluid py-2">
+          <h1 class="h3 fw-normal mb-0">个人资料</h1>
+        </div> -->
+      </header>
+	  
+      <!-- Forms Section-->
+      <section class="pb-5"> 
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Basic Form-->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-header border-bottom">
+                  <h3 class="h4 mb-0">编辑个人资料</h3>
+                </div>
+                <div class="card-body">
+                  <form class="form-horizontal">
+                    <div class="mb-3">
+                      <label class="form-label" for="exampleInputEmail1">电子邮件</label>
+                      <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="exampleInputPassword1">密码</label>
+                      <input class="form-control" id="exampleInputPassword1" type="password">
+                    </div>
+                    <div class="mb-3">
+                      <label class="col-sm-3 form-label">性别</label>
+                      <input class="form-check-input" id="defaultRadio0" type="radio" name="gender">
+                      <label class="form-check-label" for="defaultRadio0">男</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input class="form-check-input" id="defaultRadio1" type="radio" name="gender" checked>
+                      <label class="form-check-label" for="defaultRadio1">女</label>
+                    </div>
+                    <div class="mb-3">
+						<label class="col-sm-3 form-label">爱好</label>
+					      <input class="form-check-input" id="defaultCheck0" type="checkbox">
+					      <label class="form-check-label" for="defaultCheck0">选项一</label>					   
+					      <input class="form-check-input" id="defaultCheck1" type="checkbox" checked>
+					      <label class="form-check-label" for="defaultCheck1">选项二被选中</label>					    
+					      <input class="form-check-input" id="defaultCheck2" type="checkbox" checked disabled>
+					      <label class="form-check-label" for="defaultCheck2">选项三被选中且不可更改</label>					
+					      <input class="form-check-input" id="defaultCheck3" type="checkbox" disabled>
+					      <label class="form-check-label" for="defaultCheck3">选项四不可更改</label>
+                    </div>
+					
+                    <div class="mb-3">
+						<label class="col-sm-3 form-label">下拉菜单</label>
+				        <select class="form-select mb-3" name="account">
+				          <option>1</option>
+				          <option>2</option>
+				          <option>3</option>
+				          <option>4</option>
+				        </select>
+                    </div>																								
+				    <div class="row">
+				      <label class="col-sm-3 form-label" for="formFile">文件上传</label>
+				      <div class="col-sm-9">
+				        <input class="form-control" id="formFile" type="file">
+				      </div>
+				    </div>
+					<br/>
+				    <div class="row">
+				      <div class="col-sm-9 ms-auto">
+				        <button class="btn btn-secondary" type="reset">取消</button>
+				        <button class="btn btn-primary" type="submit">保存</button>
+				      </div>
+				    </div>
+					<button class="btn btn-primary" type="submit">提交</button>
+				  </form>
+                </div>
+              </div>
+            </div>
+			
+            <!-- Inline Form-->
+            <div class="col-lg-6">      
+				<div class="col-lg-12">
+					<div class="card">
+					  <div class="card-header border-bottom">
+					    <h3 class="h4 mb-0">Inline Form</h3>
+					  </div>
+					  <div class="card-body">
+					    <form class="row g-3 align-items-center">
+					      <div class="col-lg">
+					        <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+					        <div class="input-group">
+					          <div class="input-group-text">@</div>
+					          <input class="form-control" id="inlineFormInputGroupUsername" type="text" placeholder="Username">
+					        </div>
+					      </div>
+					      <div class="col-lg">
+					        <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+					        <select class="form-select" id="inlineFormSelectPref">
+					          <option selected>Choose...</option>
+					          <option value="1">One</option>
+					          <option value="2">Two</option>
+					          <option value="3">Three</option>
+					        </select>
+					      </div>
+					      <div class="col-lg">
+					        <button class="btn btn-primary" type="submit">Submit</button>
+					      </div>
+					    </form>
+					  </div>
+					</div>
+				</div>
+				<!-- Modal Form-->
+				<div class="col-lg-12">
+				  <div class="card">
+				    <div class="card-header border-bottom">
+				      <h3 class="mb-0">Signin Modal</h3>
+				    </div>
+				    <div class="card-body text-center">
+				      <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#myModal">Form in simple modal </button>
+				      <!-- Modal-->
+				      <div class="modal fade text-start" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+				        <div class="modal-dialog">
+				          <div class="modal-content">
+				            <div class="modal-header">
+				              <h5 class="modal-title" id="myModalLabel">Modal Form</h5>
+				              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+				            </div>
+				            <div class="modal-body">
+				              <p>Lorem ipsum dolor sit amet consectetur.</p>
+				              <form>
+				                <div class="mb-3">
+				                  <label class="form-label" for="modalInputEmail1">Email address</label>
+				                  <input class="form-control" id="modalInputEmail1" type="email" aria-describedby="emailHelp">
+				                  <div class="form-text" id="emailHelp">We'll never share your email with anyone else.</div>
+				                </div>
+				                <div class="mb-3">
+				                  <label class="form-label" for="modalInputPassword1">Password</label>
+				                  <input class="form-control" id="modalInputPassword1" type="password">
+				                </div>
+				              </form>
+				            </div>
+				            <div class="modal-footer">
+				              <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
+				              <button class="btn btn-primary" type="button">Save changes</button>
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+            </div>
+           
+          </div>
+        </div>
+      </section>
+<footer class="main-footer w-100 position-absolute bottom-0 start-0 py-2" style="background: #222">
+        <div class="container-fluid">
+          <div class="row text-center gy-3">
+            <div class="col-sm-6 text-sm-start">
+              <p class="mb-0 text-sm text-gray-600">LEI</p>
+            </div>
+            <div class="col-sm-6 text-sm-end">
+              <p class="mb-0 text-sm text-gray-600">Design by LEI</p>
+              <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions and it helps me to run Bootstrapious. Thank you for understanding :)-->
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- JavaScript files-->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/just-validate/js/just-validate.min.js"></script>
+    <script src="vendor/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="vendor/overlayscrollbars/js/OverlayScrollbars.min.js"></script>
+    <!-- Main File-->
+    <script src="js/front.js"></script>
+    <script>
+      // ------------------------------------------------------- //
+      //   Inject SVG Sprite - 
+      //   see more here 
+      //   https://css-tricks.com/ajaxing-svg-sprite/
+      // ------------------------------------------------------ //
+      function injectSvgSprite(path) {
+      
+          var ajax = new XMLHttpRequest();
+          ajax.open("GET", path, true);
+          ajax.send();
+          ajax.onload = function(e) {
+          var div = document.createElement("div");
+          div.className = 'd-none';
+          div.innerHTML = ajax.responseText;
+          document.body.insertBefore(div, document.body.childNodes[0]);
+          }
+      }
+      injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg'); 
+      
+      
+    </script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>登录</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,fol-low">
+    <!-- Google fonts - Roboto -->
+  <!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"> -->
+    <link rel="stylesheet" href="vendor/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="vendor/overlayscrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+	<style>
+		.login-page{
+			/* background-image: url(img/photos/restaurant-1477763858572-cda7deaa9bc5.jpg);
+			background-size: cover; */
+		}
+	</style>
+  </head>
+  <body>
+    <div class="login-page d-flex align-items-center bg-gray-100">
+      <div class="container mb-3">
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <div class="card">
+              <div class="card-body p-5">
+                <header class="text-center mb-5">
+                  <h1 class="text-xxl text-gray-400 text-uppercase"><strong class="text-primary">机电烘焙</strong></h1>
+                  <p class="text-gray-500 fw-light"></p>
+                </header>
+                <form class="login-form" method="post" action="${pageContext.request.contextPath }/user.do?op=login">
+                  <div class="row">
+                    <div class="col-lg-7 mx-auto">
+                      <div class="input-material-group mb-3">
+						 <!-- data-validate-field="loginUsername" 
+						 data-validate-field="loginPassword"
+						 -->
+                        <input class="input-material" id="userName" type="text" name="accName" autocomplete="off" required />
+                        <label class="label-material" for="userName">用户名</label>
+                      </div>
+                      <div class="input-material-group mb-4">
+                        <input class="input-material" id="pwd" type="password" name="pwd" required />
+                        <label class="label-material" for="pwd">密码</label>
+                      </div>
+                    </div>
+                    <div class="col-12 text-center">       
+                      <button class="btn btn-primary mb-3" id="login" type="submit">登录</button><br>
+                      <a class="text-xs text-paleBlue" href="#!">忘记密码?  </a>
+                      <br><span class="text-xs mb-0 text-gray-500">没有账号?  </span>
+                      <a class="text-xs text-paleBlue ms-1" href="register.html"> 注册</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center position-absolute bottom-0 start-0 w-100 z-index-20">
+        </p>
+      </div>
+    </div>
+    <!-- JavaScript files-->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/just-validate/js/just-validate.min.js"></script>
+    <script src="vendor/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="vendor/overlayscrollbars/js/OverlayScrollbars.min.js"></script>
+    <!-- Main File-->
+    <script src="js/front.js"></script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+<!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+ -->  </body>
+</html>

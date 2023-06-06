@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="all,follow">
+
+		<link rel="stylesheet" href="/CookieShop/manage/vendor/choices.js/public/assets/styles/choices.min.css">
+		<link rel="stylesheet" href="/CookieShop/manage/vendor/overlayscrollbars/css/OverlayScrollbars.min.css">
+		<link rel="stylesheet" href="/CookieShop/manage/css/style.blue.min.css" id="theme-stylesheet">
+		<link rel="stylesheet" href="/CookieShop/manage/css/custom.css">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<style>
+			#tableStyle{
+				height:33vh;
+				background-color: aliceblue;
+				overflow-y: auto;
+			}
+			#myHeader{
+				margin-top:5px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Side Navbar -->
+		<nav class="side-navbar">
+			<!-- Sidebar Header    -->
+			<div class="sidebar-header d-flex align-items-center justify-content-center p-3 mb-3">
+				<!-- User Info-->
+				<div class="sidenav-header-inner text-center"><img class="img-fluid rounded-circle avatar mb-3"
+						src="img/Garfield2.gif" alt="person">
+					<h2 class="h5 text-white text-uppercase mb-0">阿宝</h2>
+					<p class="text-sm mb-0 text-muted">店员</p>
+				</div>
+				<a class="brand-small text-center" href="login.jsp">
+					<p class="h1 m-0">LEI</p>
+				</a>
+			</div>
+			<!-- Sidebar Navigation Menus-->
+			<span class="text-uppercase text-gray-500 text-sm fw-bold letter-spacing-0 mx-lg-2 heading">菜单</span>
+			<ul class="list-unstyled" id="myMenu">
+				<li class="sidebar-item"><a class="sidebar-link" href="index.html">
+						<svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
+							<use xlink:href="#real-estate-1"> </use>
+						</svg>仪表盘 </a></li>
+				<li class="sidebar-item"><a class="sidebar-link" href="cake.html">
+						<svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
+							<use xlink:href="#survey-1"> </use>
+						</svg>蛋糕管理 </a></li>
+				<li class="sidebar-item"><a class="sidebar-link" href="order.html">
+						<svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
+							<use xlink:href="#sales-up-1"> </use>
+						</svg>订单管理 </a></li>
+				<li class="sidebar-item active"><a class="sidebar-link" href="user.html">
+						<svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
+							<use xlink:href="#portfolio-grid-1"> </use>
+						</svg>客户管理 </a></li>
+				<li class="sidebar-item"><a class="sidebar-link" href="profile.html">
+						<svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
+							<use xlink:href="#quality-1"> </use>
+						</svg>个人资料 </a></li>
+			</ul>
+		</nav>
+
+		<div class="page">
+			<!-- navbar-->
+			<header class="header">
+				<nav class="navbar">
+					<div class="container-fluid">
+						<div class="d-flex align-items-center justify-content-between w-100">
+							<div class="d-flex align-items-center">
+								<a class="menu-btn d-flex align-items-center justify-content-center p-2 bg-gray-900"
+									id="toggle-btn" href="#">
+									<svg class="svg-icon svg-icon-sm svg-icon-heavy text-white">
+										<use xlink:href="#menu-1"> </use>
+									</svg></a><a class="navbar-brand ms-2" href="index.html">
+									<div class="brand-text d-none d-md-inline-block text-uppercase letter-spacing-0">
+										<span class="text-white fw-normal text-xs">LEI&nbsp; </span>
+										<strong class="text-primary text-sm">烘焙店</strong>
+									</div>
+								</a>
+							</div>
+							<ul class="nav-menu mb-0 list-unstyled d-flex flex-md-row align-items-md-center">
+
+
+								<!-- Log out-->
+								<li class="nav-item"><a class="nav-link text-white text-sm ps-0" href="login.html">
+										<span class="d-none d-sm-inline-block">注销</span>
+										<svg class="svg-icon svg-icon-xs svg-icon-heavy">
+											<use xlink:href="#security-1"> </use>
+										</svg></a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<!-- Breadcrumb-->
+			<div class="bg-gray-200 text-sm">
+				<div class="container-fluid">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb mb-0 py-3">
+							<li class="breadcrumb-item"><a class="fw-light" href="index.html">主页</a></li>
+							<li class="breadcrumb-item active fw-light" aria-current="page">蛋糕管理 </li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+			<!-- Page Header-->
+<!-- 			<header class="py-4">
+			</header> -->
+				
+				<div class="container-fluid py-2" id="myHeader">
+					<h1 class="h3 fw-normal mb-0">订单管理</h1>
+					<hr/>
+				</div>
+			<section class="tables">
+				<div class="container-fluid">
+					<div class="row">
+
+						<div class="col-lg-12">
+							<div class="card">
+								<div class="card-header border-bottom">
+									<div class="row g-3 align-items-center">
+										<div class="col-lg">
+											<label class="visually-hidden"
+												for="inlineFormInputGroupUsername">Username</label>
+											<div class="input-group">
+												<input class="form-control" id="inlineFormInputGroupUsername"
+													type="text" placeholder="Username">
+											</div>
+										</div>
+										<div class="col-lg">
+											<select class="form-select" id="inlineFormSelectPref">
+												<option selected>Choose...</option>
+												<option value="1">One</option>
+												<option value="2">Two</option>
+												<option value="3">Three</option>
+											</select>
+										</div>
+										<div class="col-lg">
+											<button class="btn btn-primary" type="submit">查询</button>
+										</div>
+										<div class="col-lg">
+											<label class="visually-hidden"
+												for="inlineFormInputGroupUsername">Username</label>
+											<div class="input-group">
+												<input class="form-control" id="inlineFormInputGroupUsername"
+													type="text" placeholder="Username">
+											</div>
+										</div>
+										<div class="col-lg">
+											<button class="btn btn-primary" type="submit">搜索</button>
+										</div>
+										<div class="col-lg">
+											<button class="btn btn-success" id="btnAdd">添加</button>
+										</div>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="table-responsive" id="tableStyle">
+										<table id="myTable"
+											class="table text-sm mb-0 table-striped table-hover table-bordered table-condensed table-sm">
+											<thead>
+												<tr>
+													<th>#</th>
+													<th>客户姓名</th>
+													<th>客户电话</th>
+													<th>客户地址</th>
+													<th>用户编号</th>
+													<th>操作</th>
+												</tr>
+											</thead>
+											<tbody></tbody>
+										</table>
+									</div>
+									<br />
+									<nav aria-label="...">
+										<ul class="pagination">
+											<li class="page-item disabled">
+												<span class="page-link">Previous</span>
+											</li>
+											<li class="page-item"><a class="page-link" href="#">1</a></li>
+											<li class="page-item active" aria-current="page">
+												<span class="page-link">2</span>
+											</li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											<li class="page-item">
+												<a class="page-link" href="#">Next</a>
+											</li>
+										</ul>
+						 		</nav>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</section>
+			<footer class="main-footer w-100 position-absolute bottom-0 start-0 py-2" style="background: #222">
+				<div class="container-fluid">
+					<div class="row text-center gy-3">
+						<div class="col-sm-6 text-sm-start">
+							<p class="mb-0 text-sm text-gray-600">LEI</p>
+						</div>
+						<div class="col-sm-6 text-sm-end">
+							<p class="mb-0 text-sm text-gray-600">Design by LEI</p>
+							<!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions and it helps me to run Bootstrapious. Thank you for understanding :)-->
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		
+		<!-- 添加的模态框 -->
+			<div class="modal fade" id="formAdd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg modal-dialog-centered">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h1 class="modal-title fs-5" id="exampleModalLabel">添加客户</h1>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        <div class="row g-3">
+						  <div class="col-md-6">
+						    <label for="cName" class="form-label">客户姓名</label>
+						    <input type="text" class="form-control" id="cName">
+						  </div>
+						  <div class="col-md-6">
+						    <label for="cPhone" class="form-label">客户电话</label>
+						    <input type="text" class="form-control" id="cPhone">
+						  </div>
+						  <div class="col-12">
+						    <label for="cAdd" class="form-label">客户地址</label>
+						    <input type="text" class="form-control" id="cAdd" placeholder="客户地址">
+						  </div>
+		 
+					</div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+			        <button type="button" class="btn btn-primary" id="btnAddConfirm">确认添加</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			
+			<!-- 修改的模态框 -->
+			<div class="modal fade" id="formModify" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg modal-dialog-centered">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h1 class="modal-title fs-5" id="exampleModalLabel">修改客户</h1>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        <div class="row g-3">
+						<div class="col-md-6">
+						  <label for="cId" class="form-label">客户编号</label>
+						  <input type="text" class="form-control" id="cId" disabled>
+						  <input type="text" class="form-control" id="cIdUpdate" hidden>
+						</div>
+			        	 <div class="col-md-6">
+			        	   <label for="cNameUpdate" class="form-label">客户姓名</label>
+			        	   <input type="text" class="form-control" id="cNameUpdate">
+			        	 </div>
+			        	 <div class="col-md-6">
+			        	   <label for="cPhoneUpdate" class="form-label">客户电话</label>
+			        	   <input type="text" class="form-control" id="cPhoneUpdate">
+			        	 </div>
+			        	 <div class="col-12">
+			        	   <label for="cAddUpdate" class="form-label">客户地址</label>
+			        	   <input type="text" class="form-control" id="cAddUpdate" placeholder="客户地址">
+			        	 </div>		 
+					</div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+			        <button type="button" class="btn btn-primary" id="btnModifyConfirm">确认修改</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			
+		<!-- JavaScript files-->
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="vendor/chart.js/Chart.min.js"></script>
+		<script src="vendor/just-validate/js/just-validate.min.js"></script>
+		<script src="vendor/choices.js/public/assets/scripts/choices.min.js"></script>
+		<script src="vendor/overlayscrollbars/js/OverlayScrollbars.min.js"></script>
+		<!-- Main File-->
+		<script src="js/front.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script>
+			getData();
+
+			//点击添加按钮，来弹窗，用弹窗来添加
+			$("#btnAdd").click(function() {
+				$($("#formAdd")).modal('show');
+			});
+
+			//点击确认添加按钮，来确认添加，并且把用户填到表单的值传到后台
+			$("#btnAddConfirm").click(function() {
+				//1. 先获取到用户的输入
+				//2. 把用户的输入，组装成一个JSON对象
+				var data = {
+					customerName: $("#cName").val(),
+					customerPhone: $("#cPhone").val(),
+					address: $("#cAdd").val()
+				}
+				//3. 把JSON对象, 通过Ajax的方式传输到后台
+				$.ajax({
+					type: "post", //提交方式
+					url: 'http://localhost:8080/CookieShop/customer',
+					data: {
+						"op": "add",
+						"data": JSON.stringify(data)
+					},
+					success: function(a) { //请求成功后执行的函数
+						//4. 接收后台响应
+						alert(a);
+						if (a == "成功") {
+							$($("#formAdd")).modal('hide');
+							getData();
+						}
+					},
+					error: function() { //请求失败后执行的函数
+						alert("请求失败");
+					},
+				});
+			});
+
+			//显示修改对话框
+			var userId;
+			function modifyShow(btn) {
+				//1. 获取到用户点击的当前行的数据值
+				var tds = btn.parentNode.parentNode.children;			
+				//2. 把这些值，装到input输入框里
+				$("#cId").val(tds[0].innerText);
+				$("#cIdUpdate").val(tds[0].innerText);
+				$("#cNameUpdate").val(tds[1].innerText);
+				$("#cPhoneUpdate").val(tds[2].innerText);
+				$("#cAddUpdate").val(tds[3].innerText);
+				userId=tds[4].innerText;
+				//3. 显示修改对话框
+				$($("#formModify")).modal('show');	
+				 
+			}
+
+			//确认修改，执行修改的操作
+			$("#btnModifyConfirm").click(function() {
+				//1. 先获取到用户的输入
+				//2. 把用户的输入，组装成一个JSON对象
+				var data = {
+					customerId:$("#cIdUpdate").val(),
+					customerName: $("#cNameUpdate").val(),
+					customerPhone: $("#cPhoneUpdate").val(),
+					address: $("#cAddUpdate").val(),
+					userId:userId
+				}
+		 	//3. 把JSON对象, 通过Ajax的方式传输到后台
+				$.ajax({
+					type: "post", //提交方式
+					url: 'http://localhost:8080/CookieShop/customer',
+					data: {
+						"op": "update",
+						"data": JSON.stringify(data)
+					},
+					success: function(a) { //请求成功后执行的函数
+						//4. 接收后台响应
+						// alert(a);
+						if (a == "成功") {
+							$($("#formModify")).modal('hide');
+							getData();
+						}
+					},
+					error: function() { //请求失败后执行的函数
+						alert("请求失败");
+					},
+				});
+			});
+
+			//删除
+			function del(id) {
+				if (confirm("是否删除?")) {
+					$.ajax({
+						type: "post", //提交方式
+						url: 'http://localhost:8080/CookieShop/customer',
+						data: {
+							"op": "del",
+							"data": id
+						},
+						success: function(a) { //请求成功后执行的函数
+							//4. 接收后台响应
+							alert(a);
+							if (a == "成功") {
+								getData();
+							}
+						},
+						error: function() { //请求失败后执行的函数
+							alert("请求失败");
+						},
+					});
+				}
+
+		 }
+
+			//获取数据
+			function getData() {
+				//$("#myDiv").text("我是jQuery示例");
+				//$("#myPoem").load("poem.jsp");
+				$.ajax({
+					type: "post", //提交方式
+					url: 'http://localhost:8080/CookieShop/customer',
+					data:{
+						"op":"all"
+					},
+					success: function(a) { //请求成功后执行的函数
+						var data = JSON.parse(a);
+						console.log(data);
+						var tableStr = "";
+						for (var i = 0; i < data.length; i++) {
+							//console.log(data[i]);
+							tableStr += "<tr><td>" + data[i].customerId + "</td>";
+							tableStr += "<td>" + data[i].customerName + "</td>";
+							tableStr += "<td>" + data[i].customerPhone + "</td>";
+							tableStr += "<td>" + data[i].address + "</td>";
+							tableStr += "<td>" + data[i].userId + "</td>";
+							tableStr += "<td><button class='btn btn-danger btn-sm' onclick='del(" + data[i].customerId +
+								")'>删除</button>&nbsp;";
+							tableStr +=
+								"<button class='btn btn-info btn-sm' onclick='modifyShow(this)'>修改</button></td></tr>";
+						}
+						$("#myTable tbody").empty().append(tableStr);
+					},
+					error: function() { //请求失败后执行的函数
+						alert("请求失败");
+					},
+				});
+			}
+			
+		</script>
+	</body>
+</html>
